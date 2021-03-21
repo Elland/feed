@@ -3,14 +3,7 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages:
-- completed:
-    hackage: doctest-driver-gen-0.3.0.3@sha256:acf626d95c5c528ef03db54423615bd0e583519cb38a9d2348d8d2835d89a8d6,1986
-    pantry-tree:
-      size: 440
-      sha256: cb9214f0e5631b922fb3b961082a12df190e233ec68675d75b35e335f6a6f939
-  original:
-    hackage: doctest-driver-gen-0.3.0.3@sha256:acf626d95c5c528ef03db54423615bd0e583519cb38a9d2348d8d2835d89a8d6,1986
+packages: []
 snapshots:
 - completed:
     size: 563103

@@ -128,34 +128,35 @@ test-suite tests
     , xml-types >= 0.3.6 && < 0.4
     , xml-conduit >= 1.3 && < 1.10
 
-test-suite readme
-  ghc-options:       -Wall -pgmL markdown-unlit
-  main-is:           README.lhs
-  default-language:  Haskell2010
-  default-extensions:
-    NoImplicitPrelude
-    OverloadedStrings
-  type:              exitcode-stdio-1.0
-  build-depends:
-      base >= 4.6 && < 4.15
-    , base-compat >= 0.9 && < 0.12
-    , text
-    , feed
-    , xml-conduit
-    , xml-types
-  build-tool-depends:
-    markdown-unlit:markdown-unlit >= 0.4 && < 0.6
+-- test-suite readme
+--   ghc-options:       -Wall -pgmL
+--   -- markdown-unlit
+--   main-is:           README.lhs
+--   default-language:  Haskell2010
+--   default-extensions:
+--     NoImplicitPrelude
+--     OverloadedStrings
+--   type:              exitcode-stdio-1.0
+--   build-depends:
+--       base >= 4.6 && < 4.15
+--     , base-compat >= 0.9 && < 0.12
+--     , text
+--     , feed
+--     , xml-conduit
+--     , xml-types
+--   build-tool-depends:
+--     markdown-unlit:markdown-unlit >= 0.4 && < 0.6
 
-test-suite readme-doctests
-  hs-source-dirs: tests
-  main-is: doctest-driver.hs
-  type: exitcode-stdio-1.0
-  default-language: Haskell2010
-  build-depends:
-      base >= 4 && < 4.15
-    , doctest
-    -- , doctest-driver-gen
-    , feed
-  build-tool-depends:
-      markdown-unlit:markdown-unlit >= 0.4 && < 0.6
-    -- , doctest-driver-gen:doctest-driver-gen
+-- test-suite readme-doctests
+--   hs-source-dirs: tests
+--   main-is: doctest-driver.hs
+--   type: exitcode-stdio-1.0
+--   default-language: Haskell2010
+--   build-depends:
+--       base >= 4 && < 4.15
+--     , doctest
+--     -- , doctest-driver-gen
+--     , feed
+--   build-tool-depends:
+--       markdown-unlit:markdown-unlit >= 0.4 && < 0.6
+--     -- , doctest-driver-gen:doctest-driver-gen
