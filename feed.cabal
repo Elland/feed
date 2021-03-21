@@ -154,8 +154,8 @@ test-suite readme-doctests
   build-depends:
       base >= 4 && < 4.15
     , doctest
-    , doctest-driver-gen
+    -- , doctest-driver-gen
     , feed
   build-tool-depends:
       markdown-unlit:markdown-unlit >= 0.4 && < 0.6
-    , doctest-driver-gen:doctest-driver-gen
+    -- , doctest-driver-gen:doctest-driver-gen
